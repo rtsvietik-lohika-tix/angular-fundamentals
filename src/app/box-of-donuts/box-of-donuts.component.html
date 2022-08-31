@@ -3,5 +3,7 @@
 	<span *ngIf="size <= 4">Small box</span>
 	<span *ngIf="size >= 8">Large box</span>
 	<span *ngIf="size > 4 && size < 8">Box</span>
+	<p *ngIf="donuts.length === size">Box is full</p>
 </div>
-<app-donut [donut]="donuTTT" style="display: inline-block;"></app-donut>
+<!-- <app-donut [donut]="donuTTT" style="display: inline-block;"></app-donut> -->
+<app-donut *ngFor="let currentDonut of donuts" [donut]="currentDonut"></app-donut>
