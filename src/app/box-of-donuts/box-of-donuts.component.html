@@ -1,2 +1,7 @@
-<p>Size: {{size}}</p>
+<!-- <p>Size: {{size}}</p> -->
+<div>
+	<span *ngIf="size <= 4">Small box</span>
+	<span *ngIf="size >= 8">Large box</span>
+	<span *ngIf="size > 4 && size < 8">Box</span>
+</div>
 <app-donut [donut]="donuTTT" style="display: inline-block;"></app-donut>
