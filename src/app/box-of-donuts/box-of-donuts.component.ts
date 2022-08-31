@@ -6,12 +6,14 @@ import { Donut } from '../models/donut.interface';
   templateUrl: './box-of-donuts.component.html',
 })
 export class BoxOfDonutsComponent {
-  donuTTT: Donut = { name: 'Chocolate', icing: true };
-
   @Input() size: number;
+
+  donuTTT: Donut = { name: 'Chocolate', icing: true };
 
   donuts: Donut[] = [
     { name: 'Fruit', icing: true },
     { name: 'White Chocolote', icing: false },
   ];
+
+  show = true;
 }

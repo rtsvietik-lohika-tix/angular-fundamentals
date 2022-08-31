@@ -7,6 +7,7 @@ import { Donut } from 'src/app/models/donut.interface';
 })
 export class DonutComponent {
   @Input() donut: Donut;
+  @Input() showName: boolean;
 
   icing: boolean = true;
 }
