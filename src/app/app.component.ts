@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
+    <<<<<<< HEAD
     <!--set the size of box -->
     <app-box-of-donuts
       style="border: 1px solid #000;"
@@ -10,7 +11,4 @@ import { Component } from '@angular/core';
     ></app-box-of-donuts>
   `,
 })
-export class AppComponent {
-  name = 'Brian Love';
-  twitter = '@brian_love';
-}
+export class AppComponent {}
