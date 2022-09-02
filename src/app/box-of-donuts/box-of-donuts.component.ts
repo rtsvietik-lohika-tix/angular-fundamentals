@@ -9,11 +9,11 @@ import { Donut } from '../models/donut.interface';
 export class BoxOfDonutsComponent implements OnChanges {
   @Input() size: number;
 
-  donuTTT: Donut = { name: 'Chocolate', icing: true };
+  donuTTT: Donut = { name: 'chocolate', icing: true, price: 28 };
 
   donuts: Donut[] = [
-    { name: 'Fruit', icing: true },
-    { name: 'White Chocolote', icing: false },
+    { name: 'fruit', icing: true, price: 30 },
+    { name: 'white сhocolote', icing: false, price: 35 },
   ];
 
   show = true;

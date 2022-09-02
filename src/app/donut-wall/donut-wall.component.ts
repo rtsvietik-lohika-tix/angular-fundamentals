@@ -11,8 +11,8 @@ export class DonutWallComponent {
   @Output() remove = new EventEmitter<Donut>();
 
   donuts: Donut[] = [
-    { name: 'Cherry', icing: true },
-    { name: 'Strawberry', icing: true },
-    { name: 'Peach', icing: false },
+    { name: 'cherry', icing: true, price: 25 },
+    { name: 'strawberry', icing: true, price: 22 },
+    { name: ' peach', icing: false, price: 27 },
   ];
 }
