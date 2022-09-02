@@ -1,0 +1,8 @@
+
+<div class="wall">
+	<div class="donut" *ngFor="let donut of donuts">
+		<app-donut [donut]="donut"></app-donut>
+		<button (click)="selected.emit(donut)">Select</button>
+		<button (click)="remove.emit(donut)">Remove</button>
+	</div>
+</div>

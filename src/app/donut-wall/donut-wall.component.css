@@ -1,0 +1,20 @@
+.wall {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 500px;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.donut {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.donut > button {
+	background: transparent;
+	border: 1px solid #999;
+}
