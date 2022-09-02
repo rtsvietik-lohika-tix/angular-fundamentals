@@ -4,6 +4,7 @@ import { Donut } from '../models/donut.interface';
 @Component({
   selector: 'app-box-of-donuts',
   templateUrl: './box-of-donuts.component.html',
+  styleUrls: ['./box-of-donuts.component.css'],
 })
 export class BoxOfDonutsComponent {
   @Input() size: number;
@@ -16,4 +17,5 @@ export class BoxOfDonutsComponent {
   ];
 
   show = true;
+  selectedDonut: Donut;
 }

@@ -1,10 +1,20 @@
-<!-- <p>Size: {{size}}</p> -->
-<div>
+<div class="box">
+	<!-- <p>Size: {{size}}</p> -->
+<div class="heading">
 	<span *ngIf="size <= 4">Small box</span>
 	<span *ngIf="size >= 8">Large box</span>
 	<span *ngIf="size > 4 && size < 8">Box</span>
 	<p *ngIf="donuts.length === size">Box is full</p>
 </div>
 <!-- <app-donut [donut]="donuTTT" style="display: inline-block;"></app-donut> -->
-<app-donut *ngFor="let currentDonut of donuts" [donut]="currentDonut" [showName]="show"></app-donut>
+<div class="donuts">
+	<app-donut 
+	*ngFor="let currentDonut of donuts" 
+	[donut]="currentDonut"
+	[showName]="show"
+	(click)="selectedDonut = currentDonut"
+	[ngClass]="{selected: currentDonut === selectedDonut}"
+	></app-donut>
+</div>
 <button (click)="show = !show">Toggle</button>
+</div>
