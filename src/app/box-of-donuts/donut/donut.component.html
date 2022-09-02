@@ -2,6 +2,6 @@
 <!-- <p>Donut name: {{donut.name}}; Icing: {{icing}}</p> -->
 <div class="name">
 	<p [hidden]="showName">Donut name: {{donut.name | titlecase}}</p> 
-	<p>{{ donut.price | currency}}</p>
+	<p>{{ donut.price | currency : 'UAH '}}</p>
 	<span *ngIf="donut.icing" [hidden]="donut.fileName && donut.fileName.length > 0"></span>
 </div>
