@@ -8,6 +8,7 @@ import { Donut } from '../models/donut.interface';
 })
 export class BoxOfDonutsComponent implements OnChanges {
   @Input() size: number;
+  @Input() name: string;
 
   donuTTT: Donut = { name: 'chocolate', icing: true, price: 28 };
 
